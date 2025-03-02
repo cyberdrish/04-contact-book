@@ -30,7 +30,7 @@ function App() {
     e.preventDefault();
     setContacts((oldVal) =>
       oldVal.map((val) =>
-        isEditing === val ? { ...val, city: name, name: city } : { ...val }
+        isEditing === val ? { ...val, name, city } : { ...val }
       )
     );
 
