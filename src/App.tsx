@@ -6,7 +6,7 @@ interface Contact {
 }
 
 function App() {
-  // can use nameRef = useRef() hook then get value like nameRef.current.value  or can use useState() hook
+  //should use uniqueId(crypto.randomUUID()) for this...
   const [name, setName] = useState<string>("");
   const [city, setCity] = useState<string>("");
   const [contacts, setContacts] = useState<Contact[]>([]);
